@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "2f555905-ffed-4edb-b9fe-4c78c937853c",
+		"name": "mainskf",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8085/machine",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"alarm\": \"High\",\r\n    \"description\": \"description\",\r\n    \"machinetemplateid\": \"GRINDING_MOTOR\",\r\n    \"msg\": \"high\",\r\n    \"name\": \"admin\",\r\n    \"operator\": \"=\",\r\n    \"property\": \"Vibration\",\r\n    \"realtimeval\": \"25\",\r\n    \"thresholdvalue\": \"22\",\r\n    \"type\": \"int\",\r\n    \"units\": \"mm\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/machine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"machine"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
